@@ -17,8 +17,7 @@ final class Uom
         $name,
         $description = '',
         $symbol = '',
-        $conversionFactor = '',
-        $quantity = ''
+        $conversionFactor = ''
     ) {
         if (empty($commonCode) || empty($name)) {
             throw new InvalidArgumentException('UoM requires common code and name');
