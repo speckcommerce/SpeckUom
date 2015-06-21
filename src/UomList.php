@@ -31,11 +31,11 @@ class UomList
         }
 
         return new Uom(
-            self::$uomArray['commoncode'],
-            self::$uomArray['name'],
-            self::$uomArray['description'],
-            self::$uomArray['symbol'],
-            self::$uomArray['conversion_factor']
+            self::$uomArray[$commonCode]['commoncode'],
+            self::$uomArray[$commonCode]['name'],
+            self::$uomArray[$commonCode]['description'],
+            self::$uomArray[$commonCode]['symbol'],
+            self::$uomArray[$commonCode]['conversion_factor']
         );
     }
 
